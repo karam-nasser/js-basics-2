@@ -14,31 +14,27 @@
     It should have one parameter, `username`
     The function should return a string that says: 
     'Welcome back, [USERNAME]'
-    Where USERNAME is the `username` arguement sent in
+    Where USERNAME is the `username` argument sent in
 
     For example, if called with `Andrew` as the 
     argument, `greetUser` should return the string:
     'Welcome back, Andrew'
 */
 
-//CODE HERE
-
-
-
+//greetUser
+const USERNAME = () => {
+    return 'Welcome back [USERNAME]'
+}
 
 
 //////////////////PROBLEM 2////////////////////
 /* 
-    Below is an array of zip codes that are in
-    the restaurant's delivery zone. 
+    Below is an array of zip codes that are in the restaurant's delivery zone. 
 
-    Write a function called `canWeDeliver` that
-    takes in one argument, `zipCode`.
+    Write a function called `canWeDeliver` that takes in one argument, `zipCode`.
 
-    If the zip code passed in is in the array,
-    return a string letting the user know they
-    are eligible for delivery. If they are not, 
-    return a string letting them know that. 
+    If the zip code passed in is in the array, return a string letting the user know they
+    are eligible for delivery. If they are not, return a string letting them know that. 
 
     For example:
     canWeDeliver(84606) 
@@ -49,41 +45,64 @@
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
-
-
+function checkdeliveryAreaZipCodes() {
+    for(i = 0; i < checkdeliveryAreaZipCodes.length; i++) {
+        if (checkdeliveryAreaZipCodes[i] == deliveryAreaZipCodes) {
+            validcode = true;
+}
+    if (true)
+    {
+    return ('Youre in our delivery zone!') 
+    }      
+    else
+    {
+    return ('Sorry, we cant deliver to that address')
+    }
+}
+}
 
 /* 
     Problem 2 Continued
 
     Now you're going to rewrite your function.
 
-    If you wrote `canWeDeliver` using a loop of
-    some kind, write a new function (`canWeDeliverTwo`)
-    below, using the `includes` array method. 
-    Look it up on MDN if you're not sure how to use 
-    it. 
+    If you wrote `canWeDeliver` using a loop of some kind, write a new function 
+    (`canWeDeliverTwo`) below, using the `includes` array method. 
+    Look it up on MDN if you're not sure how to use it. 
 
-    If you already used the `includes` method, 
-    write a new function using some sort of 
-    loop (for loop, higher order array method).
-    Name your new function `canWeDeliverTwo`.
+    If you already used the `includes` method, write a new function using some sort of 
+    loop (for loop, higher order array method).Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
+
+function checkdeliveryAreaZipCodes2 () {
+    for(i = 0; i < checkdeliveryAreaZipCodes.length; i++) {
+        if (checkdeliveryAreaZipCodes[i] == deliveryAreaZipCodes) {
+
+            function deliveryAreaZipCodes() {
+            }
+            validcode = true;
+}
+    if (true)
+    {
+    return ('Youre in our delivery zone!') 
+    }      
+    else
+    {
+    return ('Sorry, we cant deliver to that address')
+    }
+}
+}
+
 
 
 //////////////////PROBLEM 3////////////////////
 /* 
-    Below is an array of objects that have some
-    information about a couple of deals that are
-    available at the restaurant currently. 
-
-    You are going to access the object's properties 
-    and change some values. Don't edit the array 
-    directly, let's use the `replace` method.
-
-    Read on for more instructions.
+    Below is an array of objects that have some information about a couple of deals 
+    that are available at the restaurant currently. 
+    You are going to access the object's properties and change some values. 
+    Don't edit the array directly, let's use the `replace` method.
 */
 
 const deals = [
@@ -98,17 +117,13 @@ const deals = [
 ]
 
 /*
-    The owner has decided to take the 15% off
-    deal down to 10%.
-
-    Reassign the value of the first deal's title
-    to be itself, but use the `replace` method
-    to replace the 15 with a 10.
+    The owner has decided to take the 15% off deal down to 10%.
+    Reassign the value of the first deal's title to be itself, 
+    but use the `replace` method to replace the 15 with a 10.
 */
 
-//CODE HERE
-
-
+const deals = constdealsString.replace("15", "10");
+console.log(constdealsString)
 
 /*
     The restaurant is going to continue its
@@ -123,4 +138,5 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+const deals = constdealsString.replace("March", "April");
+console.log(constdealsString)
